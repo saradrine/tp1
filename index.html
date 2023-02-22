@@ -13,14 +13,31 @@
     <title>Mini Word</title>
   </head>
   <body>
-    <p>test</p>
-    <input type="color" id="couleur" value="green" />
-    <input type="number" id="taille" value="32" />
-    <select id="police" value="Arial">
-      <option value="Arial">Arial</option>
-      <option value="Garamond">Garamond</option>
-      <option value="Verdana">Verdana</option>
-    </select>
+    <style>
+      .my-custom-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between, center;
+        background-color: bisque;
+        padding: 10px;
+        margin: 10px;
+      }
+      .col-sm-3 {
+        width: 30%;
+        padding: auto;
+        margin: auto;
+      }
+    </style>
+    <div class="row my-custom-row">
+      <p>Test</p>
+      <input class="col-sm-3" type="color" id="couleur" />
+      <input class="col-sm-3" type="number" id="taille" value="32" />
+      <select class="col-sm-3" id="police" value="Arial">
+        <option value="Arial">Arial</option>
+        <option value="Garamond">Garamond</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
